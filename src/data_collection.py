@@ -10,7 +10,8 @@ def fetch_data():
     for coin in COINS:
         print(f"Downloading {coin}...")
         df=yf.download(coin, start=START_DATE)
-        df.to_csv(RAW_PATH/f"{coin}.csv")
+        df.to_csv(RAW_PATH / f"{coin}.csv", index_label="Date")
+
 
 def plot_close(coin):
         df=yf.download(coin, start=START_DATE)
