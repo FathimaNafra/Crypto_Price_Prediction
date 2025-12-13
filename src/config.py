@@ -1,0 +1,11 @@
+COINS = [
+    "BTC-USD",
+    "ETH-USD",
+    "BNB-USD",
+    "SOL-USD",
+    "XRP-USD"
+]
+
+START_DATE = "2019-01-01"
+SEQUENCE_LENGTH = 10
+TEST_SIZE = 0.2
